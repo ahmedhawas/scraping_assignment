@@ -41,7 +41,7 @@ a:visited {
 	text-decoration: none; 
 	color: #D4CDDC;
 	}
-.test:hover, a:hover, a:focus, a:active { 
+.test:hover, .test:active, a:hover, a:focus, a:active { 
 	text-decoration: underline; 
 	color: #9685BA;
 	}
@@ -178,6 +178,7 @@ footer a:link, footer a:visited {
 	}
 .sidebar li a:link {
 	color: #988F5E;
+	text-decoration: none;
 	}
 .sidebar li a:visited {
 	color: #B3AE94;
@@ -192,3 +193,19 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	}
+
+div .example1 {
+	background: #69F;
+	width: 10em;
+	height: 10em;
+	-moz-border-radius: 5em;
+	-webkit-border-radius: 5em;
+	border-radius: 7em;
+	float: right;
+	padding: 2em;
+}
+
+.example1 p {
+       padding: 2em 2em 0 2em;
+}
+

@@ -9,15 +9,18 @@
 	<div class="container">
 	
 	<h1> Live Soccer Scores Update Centre </h1>
-	<script src='http://code.jquery.com/jquery.js'></script>
-	<script src='./bootstrap/js/bootstrap.min.js'></script>
-	<ul>
-		<% for i in 0..@scores.length-1%>
-			 <li class="a:hover"> 
-			 	<%= @scores[i] %>
-			 </li>
+	<h3> Today's soccer matches around the world </h3>
+
+		#<% for i in 0..@scores.length-1%>
+			<div class="example1">
+  				<p>
+  					<%= @home_t[i] %>
+			 		<%= @away_t[i] %>
+			 		<%= @home_t_s[i] %>
+			 		<%= @away_t_s[i] %>
+  				</p>
+			</div>
 		<% end %>
-	</ul>
 
 	<form class='well form-search'>
 		<input type='text' class='input-medium search-query'>
