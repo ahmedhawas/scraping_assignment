@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <link rel='stylesheet' href='./bootstrap/css/bootstrap.css'> -->
+	<link rel='stylesheet' href='./style.css'>
+	<title> Into to HTML/CSS </title>
+</head>
+<body>
+	<div class="container">
+	
+	<h1> Live Soccer Scores Update Centre </h1>
+	<script src='http://code.jquery.com/jquery.js'></script>
+	<script src='./bootstrap/js/bootstrap.min.js'></script>
+	<ul>
+		<% for i in 0..@scores.length-1%>
+			 <li class="a:hover"> 
+			 	<%= @scores[i] %>
+			 </li>
+		<% end %>
+	</ul>
+
+	<form class='well form-search'>
+		<input type='text' class='input-medium search-query'>
+		<button type='submit' class='btn' name='user_input'> search </button>
+	</form>
+	</div>
+</body>
+
+</html>
